@@ -69,17 +69,27 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-gray-900 font-sans">
       {/* هدر */}
       <header className="text-white py-12 text-center shadow-md transition-all duration-500 ease-in-out">
-      <h1 className="text-4xl sm:text-5xl font-semibold">خدمات ناخن امیری</h1>
-
-        <p className="mt-4 text-lg sm:text-xl opacity-80">09028498525 | تهران، جنت آباد جنوبی، خیابان بهمنی نژاد</p>
+        <h1 className="text-4xl sm:text-5xl font-semibold">خدمات ناخن امیری</h1>
       </header>
 
       {/* بخش معرفی */}
       <section className="pt-16 pb-12 px-8 bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-lg max-w-5xl mx-auto mt-16 fade-in transition-all" data-aos="fade-up">
         <h2 className="text-3xl font-medium text-gray-900 mb-4">درباره من</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          من [نام ناخنکار] هستم و در این سالن خدمات مختلفی برای ناخن‌ها ارائه می‌کنم. برای نوبت‌گیری و اطلاعات بیشتر تماس بگیرید.
+          من امیری هستم، متخصص ناخن‌کاری با بیش از ۲ سال سابقه کار در این حرفه. هدف من ارائه بهترین کیفیت خدمات ناخن با کمترین قیمت ممکن است. با استفاده از مواد باکیفیت و تکنیک‌های روز، به شما تجربه‌ای بی‌نظیر از خدمات ناخن را ارائه می‌کنم.
         </p>
+      </section>
+
+      {/* بخش منو خدمات */}
+      <section className="py-12 px-8 bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-lg max-w-5xl mx-auto mt-16 fade-in transition-all" data-aos="fade-up">
+        <h2 className="text-3xl font-medium text-gray-900 mb-4">منو خدمات</h2>
+        <div className="flex justify-center">
+          <img
+            src="/images/menu.jpg" // مسیر تصویر منو
+            alt="منو خدمات"
+            className="w-full max-w-2xl rounded-lg shadow-xl"
+          />
+        </div>
       </section>
 
       {/* بخش نمونه کارها */}
@@ -106,18 +116,20 @@ export default function Home() {
       <section className="py-12 px-8 bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-lg max-w-5xl mx-auto mt-16 fade-in transition-all" data-aos="fade-up">
         <h2 className="text-3xl font-medium text-gray-900 mb-4">تماس با ما</h2>
         <p className="text-lg text-gray-700 mb-4">آدرس: تهران، جنت آباد جنوبی، خیابان بهمنی نژاد</p>
-        <a href="tel:+982828498525" className="text-white bg-blue-600 hover:bg-blue-700 rounded-full py-2 px-6 transition-colors duration-300">
-          تماس بگیرید: 09028498525
+        <a href="tel:+989365902278" className="text-white bg-blue-600 hover:bg-blue-700 rounded-full py-2 px-6 transition-colors duration-300">
+          برای رزرو نوبت با این شماره تماس بگیرید: 09365902278
         </a>
         <div className="w-full mt-8 rounded-xl overflow-hidden shadow-lg">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=..." 
-            width="100%" 
-            height="400" 
-            style={{border: 0}} 
-            allowFullScreen="" 
-            loading="lazy">
-          </iframe>
+        <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2652100003124!2d51.29646071138923!3d35.74428567245243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfce6bbc42b1f%3A0x270192444a1f65ad!2sTehran%20Province%2C%20Tehran%2C%20District%205%2C%20Bahmani%20Nejad%20St%2C%20Iran!5e0!3m2!1sen!2s!4v1740118273797!5m2!1sen!2s"
+  width="100%" 
+  height="400" 
+  style={{ border: 0 }} 
+  allowFullScreen="" 
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade">
+</iframe>
+
         </div>
       </section>
 

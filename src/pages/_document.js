@@ -5,8 +5,17 @@ class MyDocument extends Document {
     return (
       <Html lang="fa">
         <Head>
-          {/* اضافه کردن لینک فونت از Google Fonts */}
-          <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet" />
+          {/* لینک به فونت ایران یکان */}
+          <link
+            rel="stylesheet"
+            href="/fonts/woff2/IRANYekanWebRegular.woff2"
+            type="font/woff2"
+          />
+          <link
+            rel="stylesheet"
+            href="/fonts/woff2/IRANYekanWebBold.woff2"
+            type="font/woff2"
+          />
         </Head>
         <body>
           <Main />

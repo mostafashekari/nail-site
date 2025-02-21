@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-family: 'Vazir', sans-serif; /* اضافه کردن فونت وزیر */
+  --font-family: 'IRANYekan', sans-serif; /* استفاده از فونت ایران یکان */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,16 +15,55 @@
   }
 }
 
-/* اضافه کردن فونت وزیر از Google Fonts */
+/* اضافه کردن فونت ایران یکان */
 @font-face {
-  font-family: 'Vazir';
-  src: url('https://fonts.googleapis.com/css2?family=Vazir&display=swap') format('woff2');
+  font-family: 'IRANYekan';
+  src: url('/fonts/woff2/IRANYekanWebRegular.woff2') format('woff2'),
+       url('/fonts/woff2/IRANYekanWebRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('/fonts/woff2/IRANYekanWebBold.woff2') format('woff2'),
+       url('/fonts/woff2/IRANYekanWebBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* تنظیم فاصله بین حروف */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-family); /* استفاده از فونت وزیر */
+  font-family: var(--font-family); /* استفاده از فونت ایران یکان */
+  letter-spacing: 0px; /* تنظیم کرنینگ خودکار */
+  line-height: 1.6; /* تنظیم ارتفاع خط برای خوانایی بهتر */
+  text-align: right; /* متن راست‌چین */
+  font-kerning: normal; /* تنظیم کرنینگ خودکار */
+}
+
+/* برای عنوان اصلی (h1) */
+/* غیرفعال کردن کرنینگ و تنظیم فاصله دقیق‌تر بین حروف */
+/* تنظیمات جدید برای رفع مشکل فاصله بین حروف */
+h1 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  letter-spacing: 0; /* حذف فاصله حروف */
+  font-feature-settings: 'liga' 1; /* فعال‌سازی ligatures */
+}
+
+
+
+/* برای سایر هدرها */
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-family); 
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+p {
+  font-family: var(--font-family);
+  line-height: 1.8;
+  font-kerning: normal; /* تنظیم کرنینگ */
 }

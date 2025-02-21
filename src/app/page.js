@@ -69,7 +69,8 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-gray-900 font-sans">
       {/* هدر */}
       <header className="text-white py-12 text-center shadow-md transition-all duration-500 ease-in-out">
-        <h1 className="text-4xl sm:text-5xl font-semibold tracking-wider">خدمات ناخن امیری</h1>
+      <h1 className="text-4xl sm:text-5xl font-semibold">خدمات ناخن امیری</h1>
+
         <p className="mt-4 text-lg sm:text-xl opacity-80">09028498525 | تهران، جنت آباد جنوبی، خیابان بهمنی نژاد</p>
       </header>
 

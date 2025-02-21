@@ -117,7 +117,7 @@ export default function Home() {
         <h2 className="text-3xl font-medium text-gray-900 mb-4">تماس با ما</h2>
         <p className="text-lg text-gray-700 mb-4">آدرس: تهران، جنت آباد جنوبی، خیابان بهمنی نژاد</p>
         <a href="tel:+989365902278" className="text-white bg-blue-600 hover:bg-blue-700 rounded-full py-2 px-6 transition-colors duration-300">
-          برای رزرو نوبت با این شماره تماس بگیرید: 09365902278
+          رزرو نوبت : 09365902278
         </a>
         <div className="w-full mt-8 rounded-xl overflow-hidden shadow-lg">
         <iframe 

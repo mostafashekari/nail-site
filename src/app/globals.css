@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-family: 'Vazir', sans-serif; /* اضافه کردن فونت وزیر */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +15,16 @@
   }
 }
 
+/* اضافه کردن فونت وزیر از Google Fonts */
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://fonts.googleapis.com/css2?family=Vazir&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family); /* استفاده از فونت وزیر */
 }

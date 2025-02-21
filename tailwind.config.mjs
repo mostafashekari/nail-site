@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['IRANYekan', 'sans-serif'],  // اضافه کردن فونت ایران یکان
+      },
     },
   },
   plugins: [],
